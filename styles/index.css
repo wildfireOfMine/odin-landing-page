@@ -1,0 +1,253 @@
+/* De arriba para abajo */
+
+html, body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header, article:nth-child(1), footer{
+    background-color: #1F2937;
+}
+
+article{
+    margin-bottom: 10px;
+    background-color: #F9FAF8;;
+}
+
+/* Cabecera */
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+header > nav > ul {
+    display: flex;
+    font-size: 18px;
+    color: #E5E7EB;
+    list-style-type: none;
+}
+
+header > nav > ul > li{
+    margin-right: 20px;
+}
+
+header > h2 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+
+/* Primer Article */
+
+article:nth-child(1) {
+    display: flex;
+    padding: 100px;
+}
+
+article:nth-child(1) > div:nth-child(1) {
+    color: #F9FAF8;
+    padding: 20px;
+}
+
+.subcabecera {
+    margin-left: 30px;
+}
+
+.subcabecera > p{
+    padding-right: 0;
+}
+
+article:nth-child(1) > div:nth-child(1) > h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    padding-right: 0;
+}
+
+
+article:nth-child(1) > div:nth-child(2) {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(109,116,125,255);
+    color: #F9FAF8;
+    margin-right: 100px;
+    justify-content: center;
+    align-self: center;
+}
+
+article:nth-child(1) > div:nth-child(2) > p {
+    justify-content: center;
+    align-self: center;
+}
+
+article:nth-child(1) > div > button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #3882F6;
+    color: white;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #1F2937;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+
+/* Segundo Article */
+
+
+.informacion {
+    background-color: white;
+    padding: 100px;
+}
+
+main > .informacion > h1 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+}
+
+.muestra{
+    display: grid;
+    grid-template-areas: 
+    "first second third fourth";
+}
+
+picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+picture:nth-child(1) {
+    grid-area: first;
+}
+
+picture:nth-child(2) {
+    grid-area: second;
+}
+
+picture:nth-child(3) {
+    grid-area: third;
+}
+
+picture:nth-child(4) {
+    grid-area: fourth;
+}
+
+picture > div {
+    justify-content: center;
+    margin-left: 60px;
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgba(59,131,247,255);
+    border-radius: 15px;
+    background-color: white;
+}
+
+/* Cita */
+
+article:nth-child(3) {
+    background-color: #E5E7EB;
+    padding: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+blockquote{
+    margin: 0;
+}
+
+blockquote > cite {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: 300;
+}
+
+article:nth-child(3) > p {
+    margin-bottom: 0;
+    margin-left: 80%;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+
+/* Cuarto artículo */
+
+article:nth-child(4) {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+article:nth-child(4) > main {
+    display: flex;
+    border: 1px solid #3882F6;
+    border-radius: 5px;
+    color: white;
+}
+
+article:nth-child(4) > main > div {
+    background-color: #3882F6;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+article:nth-child(4) > main > div > h2 {
+    margin: 0;
+}
+
+article:nth-child(4) > main > div > p {
+    margin-top: 0;
+}
+
+article:nth-child(4) > main > div:nth-child(2) {
+    display: flex;
+}
+
+article:nth-child(4) > main > div > button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #3882F6;
+    color: white;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Pie de Página */
+
+
+footer {
+    display: flex;
+    height: 100px;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    justify-content: center;
+}
+
+footer p{
+    align-self: center;
+}
+
+
